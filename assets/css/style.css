@@ -84,36 +84,23 @@ body {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.caption-animation {
-    display: inline-block;
-    border-right: 2px solid var(--light-color);
+#typewriter {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
     white-space: nowrap;
     overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s infinite;
 }
 
-.anim-typewriter {
-    animation: typewriter 3s steps(10) 1s infinite normal both, 
-    blinkTextCursor 500ms steps(1) infinite normal;
-}
-
-@keyframes typewriter {
+@keyframes blink {
     0% {
-        width: 0;
+        border-color: rgba(255, 255, 255, 0.75);
     }
     50% {
-        width: 10ch; 
+        border-color: transparent;
     }
     100% {
-        width: 0;
-    }
-}
-
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: var(--light-color);
-    }
-    to {
-        border-right-color: transparent;
+        border-color: rgba(255, 255, 255, 0.75);
     }
 }
 
