@@ -143,6 +143,7 @@ body {
 .paragraph-about {
     font-size: 1rem;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .image-about {
@@ -182,16 +183,45 @@ body {
     padding: 1rem;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.skills.active .tech-container {
+    height: auto;
+}
+
+.skills.active .tech-container::before {
+    visibility: hidden;
 }
 
 .technologies {
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
+
+.technologies:hover {
+    transform: translateY(-5px); 
+    scale: 1;
+} 
 
 .img-tech {
     width: 100px;
     objectt-fit: cover;
-} 
+}
+
+#see_more {
+    margin-top: 10px;
+    color: var(--light-color);
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+#see_more:hover {
+    color: var(--color-primary);
+}
 
 .projects {
     height: 100vh;
