@@ -21,9 +21,10 @@
     </header>
     <main>
         <section id="home" class="home">
-            <h1 class="title-home">Carlos Vinicius</h1>
-            <p class="caption-home">
-                Desenvolvedor <span id="typewriter">Full-Stack</span>
+            <p class="paragraph-home">Olá, meu nome é</p>
+            <h1 class="name-home">Carlos Vinicius</h1>
+            <p class="paragraph-home">
+                e eu sou <span id="typewriter"> Desenvolvedor Full-Stack</span>
             </p>
         </section>
         <section id="about" class="about">
@@ -32,7 +33,14 @@
                 <div class="description-about">
                     <p class="paragraph-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae natus eos quam, dolores vitae voluptates, dicta laboriosam atque possimus veniam dolore cupiditate alias unde, obcaecati ducimus! Consequatur, eius facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio vel iure quasi, corporis perferendis architecto, eius mollitia est ipsam facilis quia corrupti error. Quam ea illum velit neque vitae!</p>
                 </div>
-                <div class="image-about"></div>
+                <div class="midia-container">
+                    <div class="image-about"></div>
+                    <div midia-links>
+                        <a href="https://github.com/CarlosVinicius01" target="_blank"><img src="assets/img/logo-github.svg" alt="Logo GitHub" class="midia"></a>
+                        <a href=" https://www.instagram.com/carlos_vinicius_383/" target="_blank"><img src="assets/img/logo-insta.svg" alt="Logo Instagram" class="midia"></a>
+                        <a href="https://www.linkedin.com/in/carlos-vinicius-87b811272/" target="_blank"><img src="assets/img/logo-linkedin.svg" alt="Logo Linkedin" class="midia"></a>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="skills" class="skills">
@@ -110,22 +118,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-dots"></div>
                 <button class="carousel-btn right-btn">&#10095;</button>
             </div>
+            <div class="carousel-dots"></div>
         </section>
         <section id="contact" class="contact">
             <h2 class="contact-title">Entre em Contato</h2>
             <form class="contact-form" id="form">
                 <div class="grupo-form">
+                    <label for="name" class="label">Digite seu nome: </label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome" class="campo-form">
                 </div>
 
                 <div class="grupo-form">
+                    <label for="email" class="label">Digite seu email:</label>
                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="campo-form">
                 </div>
 
                 <div class="grupo-form">
+                    <label for="tel" class="label">Digite seu número:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="(00) 00000-0000" class="campo-form">
+                </div>
+
+                <div class="grupo-form">
+                    <label for="message" class="label">Digite sua mensagem:</label>
                     <textarea name="message" id="message" placeholder="Digite sua mensagem" rows="4" class="campo-form"></textarea>
                 </div>
 
@@ -134,7 +150,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 Carlos Vinicius - Portfólio</p>
+        <p>&copy; 2025 Carlos Vinicius</p>
     </footer>
 </body>
 </html>
