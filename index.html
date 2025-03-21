@@ -8,6 +8,7 @@
     <script type="module" src="assets/js/index.js" defer></script>
 </head>
 <body>
+    <div class="overlay" id="overlay"></div>
     <header>
         <nav class="navigation">
             <ul class="menu">
@@ -49,19 +50,15 @@
                 <div class="technologies">
                     <img src="assets/img/html5-logo.png" alt="logo HTML5" class="img-tech">
                 </div>
-
                 <div class="technologies">
                     <img src="assets/img/css3-logo.png" alt="logo CSS3" class="img-tech">
                 </div>
-
                 <div class="technologies">
                     <img src="assets/img/javascript-logo.jpg" alt="logo JavaScript" class="img-tech">
                 </div>
-
                 <div class="technologies">
                     <img src="assets/img/python-logo.png" alt="logo Python" class="img-tech">
                 </div>
-
             </div>
             <div class="toggle-button">
                 <p id="see_more">Ver mais</p>
@@ -70,48 +67,46 @@
         </section> 
         <section id="projects" class="projects">
             <h2 class="projects-title">Projetos</h2>
-
             <div class="carousel">
                 <button class="carousel-btn left-btn">&#10094;</button>
-
                 <div class="cards-container">
-                    <div class="card">
+                    <div class="card" data-title="Projeto 1" data-description="Descrição completa do Projeto 1" data-image="assets/img/carregando.gif">
                         <img src="assets/img/carregando.gif" alt="Projeto 1" class="card-img">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/img/carregando.gif" alt="Projeto 1" class="card-img">
+                    <div class="card" data-title="Projeto 2" data-description="Descrição completa do Projeto 2" data-image="assets/img/carregando.gif">
+                        <img src="assets/img/carregando.gif" alt="Projeto 2" class="card-img">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/img/carregando.gif" alt="Projeto 1" class="card-img">
+                    <div class="card" data-title="Projeto 3" data-description="Descrição completa do Projeto 3" data-image="assets/img/carregando.gif">
+                        <img src="assets/img/carregando.gif" alt="Projeto 3" class="card-img">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/img/carregando.gif" alt="Projeto 1" class="card-img">
+                    <div class="card" data-title="Projeto 4" data-description="Descrição completa do Projeto 4" data-image="assets/img/carregando.gif">
+                        <img src="assets/img/carregando.gif" alt="Projeto 4" class="card-img">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/img/carregando.gif" alt="Projeto 1" class="card-img">
+                    <div class="card" data-title="Projeto 5" data-description="Descrição completa do Projeto 5" data-image="assets/img/carregando.gif">
+                        <img src="assets/img/carregando.gif" alt="Projeto 5" class="card-img">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/img/carregando.gif" alt="Projeto 1" class="card-img">
+                    <div class="card" data-title="Projeto 6" data-description="Descrição completa do Projeto 6" data-image="assets/img/carregando.gif">
+                        <img src="assets/img/carregando.gif" alt="Projeto 6" class="card-img">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -122,11 +117,23 @@
             </div>
             <div class="carousel-dots"></div>
         </section>
+        <section id="project-detail" class="detail-container">
+            <div class="detail-content">
+                <img id="detail-image" src="" alt="Imagem do Projeto">
+                <div class="detail-text">
+                    <h2 id="detail-title">Título do Projeto</h2>
+                    <p id="detail-description">Descrição projeto.</p>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="back-btn">Voltar</button>
+            </div>
+        </section>
         <section id="contact" class="contact">
             <h2 class="contact-title">Entre em Contato</h2>
             <form class="contact-form" id="form">
                 <div class="grupo-form">
-                    <label for="name" class="label">Digite seu nome: </label>
+                    <label for="name" class="label">Digite seu nome:</label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome" class="campo-form">
                 </div>
 
