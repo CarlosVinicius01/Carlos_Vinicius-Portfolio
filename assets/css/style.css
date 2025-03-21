@@ -7,9 +7,6 @@
 
 :root {
     --color-primary: #0468BF;
-    /* --color-secondary:#23B7D9;
-    --dark-color:#232323; */
-    /* --color-primary: #705FD9; */
     --color-secondary:#403BBF;
     --dark-color:rgb(2, 0, 34); 
     --light-color: #f0f0f0;
@@ -74,38 +71,25 @@ body {
     width: 100%;
 }
 
-.title-home {
+.name-home {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: var(--color-primary);
+    color: var(--light-color);
+
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.caption-home {
+.paragraph-home {
     font-size: 1.5rem;
+    font-weight: bold;
     display: flex;
     gap: .5rem;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    color: var(--light-color);
 }
 
 #typewriter {
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0% {
-        border-color: rgba(255, 255, 255, 0.75);
-    }
-    50% {
-        border-color: transparent;
-    }
-    100% {
-        border-color: rgba(255, 255, 255, 0.75);
-    }
+    color: var(--color-primary);
 }
 
 .about {
@@ -132,6 +116,8 @@ body {
 }
 
 .description-about {
+    display: flex;
+    flex-direction: row;
     padding: 1rem;
     max-width: 500px; 
     border-radius: 10px;
@@ -156,6 +142,26 @@ body {
     border-radius: 50%; 
     box-shadow: 0 0 20px rgba(78, 70, 229, 0.5);
     border: 1px solid var(--glass);
+}
+
+.midia-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.midia-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.midia {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 5px;
 }
 
 .skills {
@@ -330,7 +336,11 @@ body {
 }
 
 .carousel-dot.active {
-    background-color: var(--light-color);
+    background-color: var(--color-secondary);
+}
+
+.carousel-dot.active:hover {
+    background-color: rgb(24, 21, 114);
 }
 
 .contact {
@@ -362,16 +372,24 @@ body {
 .campo-form {
     width: 100%;
     padding: 1rem;
+    margin-top: .5rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     border: 1px solid var(--glass);
     color: var(--light-color);
     outline: none;
+
 }
 
 .campo-form:focus {
+
     border-color: var(--color-secondary);
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.5);
+}
+
+.label {
+    color: var(--light-color);
+    font-weight: bold;
 }
 
 .button-form {
