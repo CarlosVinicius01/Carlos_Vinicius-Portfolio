@@ -1,6 +1,7 @@
 export default function carousel() {
     const leftBtn = document.querySelector('.left-btn');
     const rightBtn = document.querySelector('.right-btn');
+    const dotsContainer = document.querySelector('.carousel-dots');
     const cardsContainer = document.querySelector('.cards-container');
     const cards = document.querySelectorAll('.card');
     const cardsPerPage = 3;
