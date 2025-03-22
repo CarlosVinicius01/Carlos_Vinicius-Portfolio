@@ -31,6 +31,7 @@ a {
 }
 
 .navigation {
+    display: block;
     position: fixed;
     top: 0;
     background: rgba(15, 23, 42, 0.8);
@@ -42,12 +43,14 @@ a {
 
 .menu {
     display: flex;
-    justify-content: center;
     list-style: none;
+    align-items: center;
+    justify-content: center;
     gap: 3rem;
 }
 
 .menu-link {
+    display: flex;
     text-decoration: none;
     color: var(--light-color);
     font-weight: 500;
@@ -137,42 +140,6 @@ a {
     gap: 50px;
 }
 
-.description-about {
-    display: flex;
-    flex-direction: row;
-    padding: 1rem;
-    max-width: 500px;
-    border-radius: 10px;
-    border: 1px solid var(--glass);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.paragraph-about {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: justify;
-}
-
-.button-cv {
-    display: inline-flex;
-    align-items: center;
-    font-weight: bold;
-    margin-top: 10px;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    background: var(--color-primary);
-    color: var(--light-color);
-    transition: all 0.3s ease;
-}
-
-.button-cv:hover {
-    background-color: rgb(24, 21, 114);
-    box-shadow: 0 0 10px var(--shadow-color);
-}
-
 .image-about {
     background-image: url('/assets/img/zoro.jpeg');
     background-size: cover;
@@ -210,6 +177,40 @@ a {
     transform: translateY(-5px);
 }
 
+.description-about {
+    padding: 1rem;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid var(--glass);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.paragraph-about {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.button-cv {
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    background: var(--color-primary);
+    color: var(--light-color);
+    transition: all 0.3s ease;
+}
+
+.button-cv:hover {
+    background-color: rgb(24, 21, 114);
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
 .skills {
     height: 100vh;
     width: 100%;
@@ -230,7 +231,7 @@ a {
     border: 1px solid var(--glass);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 1rem;
     backdrop-filter: blur(10px);
@@ -493,7 +494,7 @@ a {
 }
 
 .contact-form {
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(5px);
