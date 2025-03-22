@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .about-cont {
+        flex-direction: column;
+    }
+    .tech-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
