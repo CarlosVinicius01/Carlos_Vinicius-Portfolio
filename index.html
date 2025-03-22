@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Vinicius | Portfólio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <script type="module" src="assets/js/index.js" defer></script>
 </head>
 <body>
     <div class="overlay" id="overlay"></div>
+    <!-- Menu de Navegação -->
     <header>
         <nav class="navigation">
             <ul class="menu">
@@ -21,29 +24,43 @@
         </nav>
     </header>
     <main>
+        <!-- Início -->
         <section id="home" class="home">
             <p class="paragraph-home">Olá, meu nome é</p>
             <h1 class="name-home">Carlos Vinicius</h1>
-            <p class="paragraph-home">
-                e eu sou <span id="typewriter"> Desenvolvedor Full-Stack</span>
-            </p>
+            <p class="paragraph-home">e eu sou <span id="typewriter">Desenvolvedor Full-Stack</span></p>
         </section>
+
+        <!-- Sobre -->
         <section id="about" class="about">
             <h2 class="title-about">Sobre Mim</h2>
             <div class="about-cont">
-                <div class="description-about">
-                    <p class="paragraph-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae natus eos quam, dolores vitae voluptates, dicta laboriosam atque possimus veniam dolore cupiditate alias unde, obcaecati ducimus! Consequatur, eius facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio vel iure quasi, corporis perferendis architecto, eius mollitia est ipsam facilis quia corrupti error. Quam ea illum velit neque vitae!</p>
+                <div class="desc-cont">
+                    <div class="description-about">
+                        <p class="paragraph-about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas molestiae natus eos quam, dolores vitae voluptates, dicta laboriosam atque possimus veniam dolore cupiditate alias unde, obcaecati ducimus! Consequatur, eius facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio vel iure quasi, corporis perferendis architecto, eius mollitia est ipsam facilis quia corrupti error. Quam ea illum velit neque vitae!</p>
+                    </div>
+                    <a href="#" class="button-cv">
+                        <span class="material-symbols-outlined">download</span>Download CV
+                    </a>
                 </div>
                 <div class="midia-container">
                     <div class="image-about"></div>
                     <div midia-links>
-                        <a href="https://github.com/CarlosVinicius01" target="_blank"><img src="assets/img/logo-github.svg" alt="Logo GitHub" class="midia"></a>
-                        <a href=" https://www.instagram.com/carlos_vinicius_383/" target="_blank"><img src="assets/img/logo-insta.svg" alt="Logo Instagram" class="midia"></a>
-                        <a href="https://www.linkedin.com/in/carlos-vinicius-87b811272/" target="_blank"><img src="assets/img/logo-linkedin.svg" alt="Logo Linkedin" class="midia"></a>
+                        <a href="https://github.com/CarlosVinicius01" target="_blank">
+                            <img src="assets/img/logo-github.svg" alt="Logo GitHub - Acesse meu perfil" class="midia">
+                        </a>
+                        <a href=" https://www.instagram.com/carlos_vinicius_383/" target="_blank">
+                            <img src="assets/img/logo-insta.svg" alt="Logo Instagram - Siga-me no Instagram" class="midia">
+                        </a>
+                        <a href="https://www.linkedin.com/in/carlos-vinicius-87b811272/" target="_blank">
+                            <img src="assets/img/logo-linkedin.svg" alt="Logo Linkedin - Conecte-se no LinkedIn" class="midia">
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Habilidades -->
         <section id="skills" class="skills">
             <h2 class="title-skills">Habilidades</h2>
             <div class="tech-container">
@@ -63,59 +80,68 @@
             <div class="toggle-button">
                 <p id="see_more">Ver mais</p>
             </div>
-
         </section> 
+
+        <!-- Projetos -->
         <section id="projects" class="projects">
             <h2 class="projects-title">Projetos</h2>
             <div class="carousel">
-                <button class="carousel-btn left-btn">&#10094;</button>
+                <button class="carousel-btn left-btn" aria-label="Navegar para o projeto anterior">&#10094;</button>
                 <div class="cards-container">
+                    <!-- Cards de Projetos -->
                     <div class="card" data-title="Projeto 1" data-description="Descrição completa do Projeto 1" data-image="assets/img/carregando.gif">
-                        <img src="assets/img/carregando.gif" alt="Projeto 1" class="card-img">
+                        <img src="assets/img/carregando.gif" alt="Projeto 1" class="card-img" loading="lazy">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
+
                     <div class="card" data-title="Projeto 2" data-description="Descrição completa do Projeto 2" data-image="assets/img/carregando.gif">
-                        <img src="assets/img/carregando.gif" alt="Projeto 2" class="card-img">
+                        <img src="assets/img/carregando.gif" alt="Projeto 2" class="card-img" loading="lazy">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
+
                     <div class="card" data-title="Projeto 3" data-description="Descrição completa do Projeto 3" data-image="assets/img/carregando.gif">
-                        <img src="assets/img/carregando.gif" alt="Projeto 3" class="card-img">
+                        <img src="assets/img/carregando.gif" alt="Projeto 3" class="card-img" loading="lazy">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
+
                     <div class="card" data-title="Projeto 4" data-description="Descrição completa do Projeto 4" data-image="assets/img/carregando.gif">
-                        <img src="assets/img/carregando.gif" alt="Projeto 4" class="card-img">
+                        <img src="assets/img/carregando.gif" alt="Projeto 4" class="card-img" loading="lazy">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
+
                     <div class="card" data-title="Projeto 5" data-description="Descrição completa do Projeto 5" data-image="assets/img/carregando.gif">
-                        <img src="assets/img/carregando.gif" alt="Projeto 5" class="card-img">
+                        <img src="assets/img/carregando.gif" alt="Projeto 5" class="card-img" loading="lazy">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
+
                     <div class="card" data-title="Projeto 6" data-description="Descrição completa do Projeto 6" data-image="assets/img/carregando.gif">
-                        <img src="assets/img/carregando.gif" alt="Projeto 6" class="card-img">
+                        <img src="assets/img/carregando.gif" alt="Projeto 6" class="card-img" loading="lazy">
                         <div class="card-text">
                             <h3 class="card-name">Em Desenvolvimento</h3>
                             <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-btn right-btn">&#10095;</button>
+                <button class="carousel-btn right-btn" aria-label="Navegar para o próximo projeto">&#10095;</button>
             </div>
             <div class="carousel-dots"></div>
+
+            <!-- Detalhes do Projeto -->
         </section>
         <section id="project-detail" class="detail-container">
             <div class="detail-content">
@@ -129,6 +155,8 @@
                 <button class="back-btn">Voltar</button>
             </div>
         </section>
+
+        <!-- Seção de Contato -->
         <section id="contact" class="contact">
             <h2 class="contact-title">Entre em Contato</h2>
             <form class="contact-form" id="form">
