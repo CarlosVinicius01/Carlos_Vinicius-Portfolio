@@ -104,14 +104,15 @@
 
     /* Projetos */
     .cards-container {
-        width: 220px;
+        /* width: 260px; */
+        width: 100%;
         justify-content: flex-start;
         flex-wrap: nowrap;
         overflow-x: hidden;
     }
 
     .card {
-        width: 210px; 
+        width: 100%;
         flex-shrink: 0;
     }
 
