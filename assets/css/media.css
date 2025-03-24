@@ -124,6 +124,7 @@
     }
 
     .card:hover {
+        display: none;
         box-shadow: none;
         transform: none;
     }
