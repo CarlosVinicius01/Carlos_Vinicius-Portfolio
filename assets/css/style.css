@@ -30,6 +30,10 @@ a {
     color: inherit;
 }
 
+header {
+    position: relative;
+}
+
 .navigation {
     display: block;
     position: fixed;
@@ -41,12 +45,12 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.menu {
+.nav-menu {
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 3rem; 
 }
 
 .menu-link {
@@ -71,6 +75,21 @@ a {
 
 .menu-link:hover::after {
     width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--light-color);
+    transition: 0.4s;
+    border-radius: 3px;
 }
 
 .home {
@@ -304,13 +323,15 @@ a {
 }
 
 .cards-container {
-    max-width: 800px;
+    width: 790px;
     display: flex;
     gap: 1rem;
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 1rem;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    transition: transform 0.3s ease;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -318,7 +339,7 @@ a {
 }
 
 .card {
-    max-width: 250px;
+    width: 250px;
     height: 350px;
     flex-shrink: 0;
     background: rgba(255, 255, 255, 0.05);
@@ -328,6 +349,7 @@ a {
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
+    scroll-snap-align: start;
 }
 
 .card:hover {
@@ -356,20 +378,23 @@ a {
 }
 
 .carousel-btn {
-    background-color: var(--color-secondary);
-    border: none;
-    color: #fff;
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
+    background-color: transparent; 
+    border: none; 
+    color: var(--light-color); 
+    font-size: 2rem; 
+    padding: 0.5rem; 
     margin: 0 1rem;
     cursor: pointer;
     border-radius: 50%;
     z-index: 10;
     transition: background 0.3s;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-btn:hover {
-    background-color: rgb(24, 21, 114);
+    color: var(--color-secondary);
 }
 
 .carousel-dots {
