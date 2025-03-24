@@ -131,6 +131,38 @@
         display: none; 
     }
 
+    /* Detail */
+    .detail-container {
+        width: 330px;
+    }
+
+    .detail-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #detail-image {
+        width: 300px;
+    }
+
+    .detail-links {
+        justify-content: center;
+    }
+
+    .detail-title {
+        font-size: 1.5rem;
+    }
+
+    .detail-description {
+        font-size: 0.9rem;
+    }
+
+    .button-back {
+        justify-content: center;
+    }
+
     /* Contato */
     .contact-form { 
         max-width: 330px;
