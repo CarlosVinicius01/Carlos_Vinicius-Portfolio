@@ -1,11 +1,33 @@
-/* Typical Device Breakpoints
-Pequenas telas: até 600px
-Celular: de 600px até 768px
-Tablet: de 768px até 992px
-Desktop: de 992px até 1200px
-Grandes telas: acima de 1200px
-*/
+:root {
+    --color-primary: #0468BF;
+    --color-secondary: #403BBF;
+    --dark-color: rgb(2, 0, 34);
+    --light-color: #f0f0f0;
+    --glass: rgba(255, 255, 255, 0.1);
+    --shadow-color: rgba(78, 70, 229, 0.5);
+    --text-shadow-color: rgba(0, 0, 0, 0.5);
+}
 @media screen and (max-width: 780px) { 
+    /* Navbar */
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .menu-link:hover {
+        transition: all 0.3s ease;
+        color: var(--color-primary);
+    }
+
+    .menu-link::after {
+        content: none;
+        background: none;
+        width: 0;
+        height: 0;
+    }
+
     /* Início */
     .name-home {
         font-size: 2.5rem;
@@ -50,12 +72,10 @@ Grandes telas: acima de 1200px
     }
 
     /* Projetos */
-    .card {
-        flex: 1 0 50%;
+    .cards-container {
+        justify-content: center;
     }
-
-    /* Contato*/
-    .contact-form {
-        max-width: 330px;
+    .card {
+        width: 100%; 
     }
 }
