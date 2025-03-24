@@ -9,23 +9,54 @@
 }
 @media screen and (max-width: 780px) { 
     /* Navbar */
-    .menu {
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: rgb(3, 2, 22);
+        color: var(--light-color);
+        border-radius: 0 10px 10px 0;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
+        width: 200px;
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: all 0.4s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    .nav-menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .menu-link {
+        padding: 5px;
     }
 
     .menu-link:hover {
-        transition: all 0.3s ease;
         color: var(--color-primary);
     }
 
     .menu-link::after {
-        content: none;
-        background: none;
-        width: 0;
-        height: 0;
+        display: none;
     }
 
     /* Início */
@@ -73,9 +104,25 @@
 
     /* Projetos */
     .cards-container {
-        justify-content: center;
+        width: 220px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
     }
+
     .card {
-        width: 100%; 
+        width: 210px; 
+        flex-shrink: 0;
     }
+
+    .left-btn, .right-btn {
+        display: none; 
+    }
+
+    /* Contato */
+    .contact-form { 
+        max-width: 330px;
+    }
+
+
 }
