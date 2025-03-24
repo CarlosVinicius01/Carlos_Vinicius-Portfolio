@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Vinicius | Portfólio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
     <script type="module" src="assets/js/index.js" defer></script>
@@ -14,7 +14,12 @@
     <!-- Menu de Navegação -->
     <header>
         <nav class="navigation">
-            <ul class="menu">
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#home" class="menu-link">Início</a></li>
                 <li><a href="#about" class="menu-link">Sobre</a></li>
                 <li><a href="#skills" class="menu-link">Habilidades</a></li>
@@ -22,6 +27,7 @@
                 <li><a href="#contact" class="menu-link">Contato</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
         <!-- Início -->
@@ -55,7 +61,7 @@
                     </div>
                     <a href="#" class="button-cv"><span class="material-symbols-outlined">
                         download
-                        </span>Download CV</a>
+                        </span>Currículo</a>
                 </div>
             </div>
         </section>
