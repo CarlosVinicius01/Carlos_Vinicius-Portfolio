@@ -112,7 +112,6 @@
 
     /* Projetos */
     .cards-container {
-        /* width: 260px; */
         width: 100%;
         justify-content: flex-start;
         flex-wrap: nowrap;
@@ -123,8 +122,10 @@
         width: 100%;
         flex-shrink: 0;
     }
+
     .card:hover {
-        display: none;
+        box-shadow: none;
+        transform: none;
     }
 
     .left-btn, .right-btn {
