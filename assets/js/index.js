@@ -5,6 +5,7 @@ import typewriter from './typewriter.js';
 import links from './links.js';
 import menu from './menu.js';
 import form from './form.js';
+import contact from './contact.js';
 
 seeMore();
 carousel();
@@ -13,3 +14,4 @@ typewriter();
 links();
 menu();
 form();
+contact();
