@@ -110,14 +110,14 @@
 
     /* Projetos */
     .cards-container {
-        width: 290px;
+        width: 300px;
         justify-content: flex-start;
         flex-wrap: nowrap;
         overflow-x: hidden;
     }
 
     .card {
-        width: 280px;
+        width: 290px;
         flex-shrink: 0;
         pointer-events: auto !important;
     }
