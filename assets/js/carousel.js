@@ -84,6 +84,10 @@ export default function carousel() {
     //     }, { passive: false });
     // }
 
+    cardsContainer.addEventListener('touchmove', (e) => {
+        e.preventDefault(); 
+    }, { passive: false });
+
     leftBtn.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
