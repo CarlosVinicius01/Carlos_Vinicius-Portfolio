@@ -132,7 +132,7 @@
     }
 
     .carousel-btn:hover {
-        
+        color: inherit;
     }
 
     /* Detail */
