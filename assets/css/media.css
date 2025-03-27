@@ -131,6 +131,10 @@
         margin: 0 10px;
     }
 
+    .carousel-btn:hover {
+        
+    }
+
     /* Detail */
     .detail-container {
         width: 330px;
