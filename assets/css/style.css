@@ -395,7 +395,7 @@ header {
 }
 
 .carousel-btn:hover {
-    color: inherit;
+    color: var(--color-secondary);
 }
 
 .carousel-dots {
