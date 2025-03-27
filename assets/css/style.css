@@ -350,6 +350,7 @@ header {
     transition: all 0.3s ease;
     cursor: pointer;
     scroll-snap-align: start;
+    pointer-events: auto !important;
 }
 
 .card:hover {
