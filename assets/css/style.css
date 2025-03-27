@@ -159,11 +159,11 @@ header {
     gap: 50px;
 }
 
-.img-about {
-    //background-image: url('/assets/img/foto-teste.jpg');
-    /* background-size: cover;
+.image-about {
+    background-image: url('/assets/img/foto-teste.jpg');
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
     border-radius: 50%;
