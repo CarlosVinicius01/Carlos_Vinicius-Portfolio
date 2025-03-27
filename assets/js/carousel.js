@@ -76,9 +76,13 @@ export default function carousel() {
     }
 
     if (window.innerWidth < 780) {
-        cardsContainer.addEventListener('touchstart', handleTouchStart);
-        cardsContainer.addEventListener('touchmove', handleTouchMove);
-        cardsContainer.addEventListener('touchend', handleTouchEnd);
+        cardsContainer.addEventListener('touchstart', handleTouchStart, { passive: false });
+        cardsContainer.addEventListener('touchmove', handleTouchMove, { passive: false });
+        cardsContainer.addEventListener('touchend', (e) => {
+            e.stopPropagation(); 
+            handleTouchEnd();
+        }, { passive: false });
+
     }
 
     leftBtn.addEventListener('click', () => {
