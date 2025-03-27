@@ -6,6 +6,7 @@ import links from './links.js';
 import menu from './menu.js';
 import form from './form.js';
 import contact from './contact.js';
+import disableZoom from './disableZoom.js';
 
 seeMore();
 carousel();
@@ -15,3 +16,4 @@ links();
 menu();
 form();
 contact();
+disableZoom();
