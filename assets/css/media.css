@@ -110,26 +110,25 @@
 
     /* Projetos */
     .cards-container {
-        width: 300px;
+        width: 250px;
         justify-content: flex-start;
         flex-wrap: nowrap;
         overflow-x: hidden;
     }
 
     .card {
-        width: 290px;
+        width: 240px;
         flex-shrink: 0;
         pointer-events: auto !important;
     }
 
     .card:hover {
-        display: none;
         box-shadow: none;
         transform: none;
     }
 
-    .left-btn, .right-btn {
-        display: none; 
+    .carousel-btn {
+        margin: 0 10px;
     }
 
     /* Detail */
