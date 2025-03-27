@@ -50,40 +50,6 @@ export default function carousel() {
         }
     }
 
-    // let startX = 0;
-    // let endX = 0;
-
-    // function handleTouchStart(e) {
-    //     startX = e.touches[0].pageX; 
-    // }
-
-    // function handleTouchMove(e) {
-    //     endX = e.touches[0].pageX; 
-    // }
-
-    // function handleTouchEnd() {
-    //     if (startX - endX > 100) { 
-    //         if (currentIndex < totalPages - 1) {
-    //             currentIndex++;
-    //             updateCarousel();
-    //         }
-    //     } else if (endX - startX > 100) { 
-    //         if (currentIndex > 0) {
-    //             currentIndex--;
-    //             updateCarousel();
-    //         }
-    //     }
-    // }
-
-    // if (window.innerWidth < 780) {
-    //     cardsContainer.addEventListener('touchstart', handleTouchStart, { passive: false });
-    //     cardsContainer.addEventListener('touchmove', handleTouchMove, { passive: false });
-    //     cardsContainer.addEventListener('touchend', (e) => {
-    //         e.stopPropagation(); 
-    //         handleTouchEnd();
-    //     }, { passive: false });
-    // }
-
     cardsContainer.addEventListener('touchmove', (e) => {
         e.preventDefault(); 
     }, { passive: false });
