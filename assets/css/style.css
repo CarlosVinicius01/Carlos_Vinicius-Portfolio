@@ -160,15 +160,22 @@ header {
 }
 
 .image-about {
-    background-image: url('/assets/img/foto-teste.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     box-shadow: 0 0 20px var(--shadow-color);
     border: 1px solid var(--glass);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-about {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .midia-container {
