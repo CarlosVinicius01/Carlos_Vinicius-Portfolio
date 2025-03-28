@@ -177,6 +177,47 @@
     .contact-form { 
         max-width: 330px;
     }
+}
 
+@media screen and (min-width: 780px) and (max-width: 1024px) {
+    /* Projetos */
+    .cards-container {
+        width: 500px;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
 
+    .card {
+        width: 240px;
+        flex-shrink: 0;
+        pointer-events: auto !important;
+    }
+
+    /* Detail */
+    .detail-container {
+        width: 500px;
+    }
+
+    .detail-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #detail-image {
+        width: 400px;
+    }
+
+    .detail-links, .button-back {
+        justify-content: center;
+    }
+
+    
+    .button-link, .back-btn {
+        width: 100px;
+        padding: 8px;
+        font-size: 1rem;
+    }
 }
