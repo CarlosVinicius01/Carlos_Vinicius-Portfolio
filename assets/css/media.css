@@ -7,17 +7,6 @@
     --shadow-color: rgba(78, 70, 229, 0.5);
     --text-shadow-color: rgba(0, 0, 0, 0.5);
 }
-
-/* Estilos Gerais */
-
-.detail-links, .button-back {
-    justify-content: center;
-}
-
-.carousel-btn:hover {
-    color: inherit;
-}
-
 @media screen and (max-width: 780px) { 
     .about-cont, .desc-cont, .detail-content {
         display: flex;
@@ -167,6 +156,15 @@
         justify-content: center;
     }
 
+    .detail-links, .button-back {
+        justify-content: center;
+    }
+    
+    .carousel-btn:hover {
+        color: inherit;
+    }
+    
+
     /* Contato */
     .contact-form { 
         max-width: 330px;
@@ -211,4 +209,13 @@
         padding: 8px;
         font-size: 1rem;
     }
+
+    .detail-links, .button-back {
+        justify-content: center;
+    }
+    
+    .carousel-btn:hover {
+        color: inherit;
+    }
+    
 } 
