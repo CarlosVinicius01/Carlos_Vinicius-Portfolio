@@ -7,7 +7,24 @@
     --shadow-color: rgba(78, 70, 229, 0.5);
     --text-shadow-color: rgba(0, 0, 0, 0.5);
 }
+
+/* Estilos Gerais */
+
+.detail-links, .button-back {
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    color: inherit;
+}
+
 @media screen and (max-width: 780px) { 
+    .about-cont, .desc-cont, .detail-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
     /* Navbar */
     .nav-menu {
         position: absolute;
@@ -65,24 +82,12 @@
     }
     .paragraph-home {
         font-size: 1rem;
-    }
+    } 
     
-    /* Sobre */
-    .about-cont {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
+    /* Sobre */ 
     .image-about {
         width: 200px;
         height: 200px;
-    }
-
-    .img-about {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .desc-cont {
@@ -112,7 +117,7 @@
 
     #see_more {
         font-size: 1.2rem;
-    }
+    } 
 
     /* Projetos */
     .cards-container {
@@ -137,20 +142,9 @@
         margin: 0 10px;
     }
 
-    .carousel-btn:hover {
-        color: inherit;
-    }
-
     /* Detail */
     .detail-container {
         width: 330px;
-    }
-
-    .detail-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     #detail-image {
@@ -180,12 +174,21 @@
 }
 
 @media screen and (min-width: 780px) and (max-width: 1024px) {
+    .about-cont, .desc-cont, .detail-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    /* Sobre */
+    .image-about {
+        width: 250px;
+        height: 250px;
+    }
+
     /* Projetos */
     .cards-container {
         width: 500px;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow: hidden;
     }
 
     .card {
@@ -199,25 +202,13 @@
         width: 500px;
     }
 
-    .detail-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     #detail-image {
         width: 400px;
     }
 
-    .detail-links, .button-back {
-        justify-content: center;
-    }
-
-    
     .button-link, .back-btn {
         width: 100px;
         padding: 8px;
         font-size: 1rem;
     }
-}
+} 
