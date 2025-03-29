@@ -427,12 +427,11 @@ header {
     justify-content: flex-end;
 }
 
-.button-link, .back-btn {
+.button-link {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--color-secondary);
-    color: var(--light-color);
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -443,6 +442,15 @@ header {
 .back-btn {
     margin-top: 1rem;
     padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    color: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 } 
 
 .button-link:hover,.back-btn:hover {
