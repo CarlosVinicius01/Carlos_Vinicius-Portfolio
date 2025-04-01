@@ -217,6 +217,7 @@ header {
     /* Habilidades */
 .tech-container {
     min-width: 500px;
+    height: 300px;
     border: 1px solid var(--glass);
     border-radius: 10px;
     display: grid;
