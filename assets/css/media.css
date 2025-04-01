@@ -93,6 +93,7 @@
     /* Habilidades */
     .tech-container {
         min-width: 300px;
+        height: 220px;
         grid-template-columns: repeat(2, 1fr);
     }
     .technologies {
