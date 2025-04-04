@@ -10,10 +10,19 @@
     --color-primary: #0468BF;
     --color-secondary: #403BBF;
     --dark-color: rgb(2, 0, 34);
+    --light-color-gray: rgba(226, 232, 240, 0.8);
     --light-color: #f0f0f0;
     --glass: rgba(255, 255, 255, 0.1);
     --shadow-color: rgba(78, 70, 229, 0.5);
     --text-shadow-color: rgba(0, 0, 0, 0.5);
+    --navbar-bg: rgba(15, 23, 42, 0.8);
+    --nav-burguer-bg: rgb(3, 2, 22);
+    --dot-bg: rgba(255, 255, 255, 0.5);
+    --hover-color: rgb(24, 21, 114);
+    --overlay-bg: rgba(0, 0, 0, 0.5);
+    --form-bg: rgba(255, 255, 255, 0.05);
+    --footer-bg: rgb(1, 0, 17);
+    --button-form-bg: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
 }
 
 html {
@@ -50,13 +59,12 @@ a {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    background-color: var(--color-primary);
-    color: var(--light-color);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     z-index: 200;
+    transition: transform 0.3s ease;
 }
 
 /* Navbar */
@@ -68,7 +76,7 @@ header {
     display: block;
     position: fixed;
     top: 0;
-    background: rgba(15, 23, 42, 0.8);
+    background: var(--navbar-bg);
     width: 100%;
     z-index: 100;
     padding: 1.5rem;
@@ -201,7 +209,7 @@ header {
     border-radius: 10px;
     border: 1px solid var(--glass);
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--form-bg);
 }
 
 .paragraph-about {
@@ -223,7 +231,7 @@ header {
 }
 
 .button-cv:hover {
-    background-color: rgb(24, 21, 114);
+    background-color: var(--hover-color);
     box-shadow: 0 0 10px var(--shadow-color);
 }
 
@@ -238,7 +246,7 @@ header {
     gap: 1rem;
     padding: 1rem;
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--form-bg);
     overflow: hidden;
     transition: height 0.5s ease;
 }
@@ -301,7 +309,7 @@ header {
     width: 250px;
     height: 350px;
     flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--form-bg);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     border: 1px solid var(--glass);
@@ -333,7 +341,7 @@ header {
 }
 
 .card-description {
-    color: rgba(226, 232, 240, 0.8);
+    color: var(--light-color-gray);
     line-height: 1.25rem;
 }
 
@@ -364,7 +372,7 @@ header {
 .carousel-dot {
     width: 12px;
     height: 12px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--dot-bg);
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -375,7 +383,7 @@ header {
 }
 
 .carousel-dot.active:hover {
-    background-color: rgb(24, 21, 114);
+    background-color: var(--hover-color);
 }
 
     /* Detalhes Projeto */
@@ -384,7 +392,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--glass);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -468,7 +476,7 @@ header {
 } 
 
 .button-link:hover,.back-btn:hover {
-    background-color: rgb(24, 21, 114);
+    background-color: var(--hover-color);
     box-shadow: 0 5px 10px var(--shadow-color);
 }
 
@@ -479,7 +487,7 @@ header {
     width: 100%;
     height: 100%;
     backdrop-filter: blur(5px);
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--overlay-bg);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease;
@@ -495,7 +503,7 @@ header {
 .contact-form {
     width: 600px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--form-bg);
     backdrop-filter: blur(5px);
     border-radius: 10px;
     border: 1px solid var(--glass);
@@ -510,7 +518,7 @@ header {
     width: 100%;
     padding: 1rem;
     margin-top: .5rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--form-bg);
     border-radius: 10px;
     border: 1px solid var(--glass);
     color: var(--light-color);
@@ -529,7 +537,7 @@ header {
 .button-form {
     width: 100%;
     color: var(--light-color);
-    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    background: var(--button-form-bg);
     padding: 1rem 2rem;
     border: none;
     border-radius: 10px;
@@ -547,6 +555,6 @@ header {
 footer {
     text-align: center;
     color: var(--light-color);
-    background-color: rgb(1, 0, 17);
+    background-color: var(--footer-bg);
     padding: 3px;
 } 
