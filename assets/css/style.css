@@ -46,7 +46,20 @@ a {
     margin-bottom: 2rem;
 }
 
-    /* Navbar */
+#themeSwitcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--color-primary);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+/* Navbar */
 header {
     position: relative;
 }
