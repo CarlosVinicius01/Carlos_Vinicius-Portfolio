@@ -7,6 +7,7 @@ import menu from './menu.js';
 import form from './form.js';
 import contact from './contact.js';
 import disableZoom from './disableZoom.js';
+import theme from './theme.js'
 
 seeMore();
 carousel();
@@ -17,3 +18,4 @@ menu();
 form();
 contact();
 disableZoom();
+theme();
