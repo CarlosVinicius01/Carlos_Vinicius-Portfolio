@@ -2,10 +2,17 @@
     --color-primary: #0468BF;
     --color-secondary: #403BBF;
     --dark-color: rgb(2, 0, 34);
+    --light-color-gray: rgba(226, 232, 240, 0.8);
     --light-color: #f0f0f0;
     --glass: rgba(255, 255, 255, 0.1);
     --shadow-color: rgba(78, 70, 229, 0.5);
     --text-shadow-color: rgba(0, 0, 0, 0.5);
+    --navbar-bg: rgba(15, 23, 42, 0.8);
+    --nav-burguer-bg: rgb(3, 2, 22);
+    --hover-color: rgb(24, 21, 114);
+    --overlay-bg: rgba(0, 0, 0, 0.5);
+    --form-bg: rgba(255, 255, 255, 0.05);
+    --footer-bg: rgb(1, 0, 17);
 }
 @media screen and (max-width: 780px) { 
     .about-cont, .desc-cont, .detail-content {
@@ -19,7 +26,7 @@
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: rgb(3, 2, 22);
+        background-color: var(--nav-burguer-bg);
         color: var(--light-color);
         border-radius: 0 10px 10px 0;
         flex-direction: column;
