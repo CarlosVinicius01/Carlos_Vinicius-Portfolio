@@ -307,7 +307,7 @@ header {
 
 .card {
     width: 250px;
-    height: 350px;
+    height: auto;
     flex-shrink: 0;
     background: var(--form-bg);
     backdrop-filter: blur(5px);
@@ -318,6 +318,8 @@ header {
     cursor: pointer;
     scroll-snap-align: start;
     pointer-events: auto !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -333,6 +335,11 @@ header {
 
 .card-text {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    overflow: hidden;
 }
 
 .card-name {
@@ -343,6 +350,7 @@ header {
 .card-description {
     color: var(--light-color-gray);
     line-height: 1.25rem;
+    margin-bottom: 5px;
 }
 
 .carousel-btn {
@@ -417,6 +425,7 @@ header {
 }
 
 #detail-image {
+    max-width: 300px;
     border-radius: 10px;
 }
 
