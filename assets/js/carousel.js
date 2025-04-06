@@ -10,7 +10,7 @@ export default function carousel() {
     let totalPages = Math.ceil(cards.length / cardsPerPage);
 
     function updateCardsPerPage() {
-        if (window.innerWidth < 780) {
+        if (window.innerWidth < 768) {
             cardsPerPage = 1; 
         } else if (window.innerWidth < 1024) {
             cardsPerPage = 2; 
