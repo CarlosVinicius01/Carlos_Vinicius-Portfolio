@@ -205,7 +205,7 @@ header {
 
 .description-about {
     padding: 1rem;
-    max-width: 500px;
+    max-width: 650px;
     border-radius: 10px;
     border: 1px solid var(--glass);
     backdrop-filter: blur(10px);
