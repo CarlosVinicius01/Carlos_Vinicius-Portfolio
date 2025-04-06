@@ -217,7 +217,7 @@ header {
     text-align: justify;
 }
 
-.button-cv {
+.button-cv, .button-contact {
     display: inline-flex;
     align-items: center;
     font-weight: bold;
@@ -230,8 +230,17 @@ header {
     transition: all 0.3s ease;
 }
 
+.button-cv > span, .button-contact > span {
+    margin-right: 5px;
+}
+
 .button-cv:hover {
     background-color: var(--hover-color);
+    box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.button-contact:hover {
+    background-color:rgb(5, 67, 121);
     box-shadow: 0 0 10px var(--shadow-color);
 }
 
