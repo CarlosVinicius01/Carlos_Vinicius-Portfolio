@@ -2,6 +2,7 @@ export default function theme() {
     const body = document.querySelector('body');
     const root = document.documentElement;
     const themeSwitcher = document.getElementById('themeSwitcher');
+    const profileImage = document.getElementById('profileImage');
 
     themeSwitcher.addEventListener('click', () => {
         if (body.dataset.theme === 'dark') {
@@ -20,6 +21,8 @@ export default function theme() {
             root.style.setProperty('--dot-bg', 'rgba(30, 30, 30, 0.5)'); 
             root.style.setProperty('--button-form-bg', 'linear-gradient(45deg, #3588e8, #5a4dff)');
 
+            profileImage.src = "assets/img/foto-claro.jpg";
+
             body.dataset.theme = 'light';
             themeSwitcher.textContent = "dark_mode";
         } else {
@@ -37,6 +40,8 @@ export default function theme() {
             root.style.setProperty('--footer-bg', 'rgb(1, 0, 17)');
             root.style.setProperty('--dot-bg', 'rgba(255, 255, 255, 0.5)'); 
             root.style.setProperty('--button-form-bg', 'linear-gradient(45deg, var(--color-primary), var(--color-secondary))');
+
+            profileImage.src = "assets/img/foto-escuro.jpg";
 
             body.dataset.theme = 'dark';
             themeSwitcher.textContent = "brightness_7";
