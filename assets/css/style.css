@@ -9,7 +9,7 @@
 :root {
     --color-primary: #0468BF;
     --color-secondary: #403BBF;
-    --dark-color: rgb(2, 0, 34);
+    --dark-color:rgb(2, 0, 34);
     --light-color-gray: rgba(226, 232, 240, 0.8);
     --light-color: #f0f0f0;
     --glass: rgba(255, 255, 255, 0.1);
@@ -189,6 +189,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 .midia {
