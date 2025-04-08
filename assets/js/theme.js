@@ -5,10 +5,10 @@ export default function theme() {
     const profileImage = document.getElementById('profileImage');
 
     themeSwitcher.addEventListener('click', () => {
-        if (body.dataset.theme === 'dark') {
-            root.style.setProperty('--dark-color', '#d9d9d9'); 
+        if (body.dataset.theme === 'dark') { 
+            root.style.setProperty('--dark-color', '#cfcfcf'); 
             root.style.setProperty('--light-color', '#1a1a1a'); 
-            root.style.setProperty('--light-color-gray', 'rgba(70, 70, 70, 0.8)');
+            root.style.setProperty('--light-color-gray', 'rgba(58, 58, 58, 0.8)');
             root.style.setProperty('--glass', 'rgba(0, 0, 0, 0.15)');
             root.style.setProperty('--shadow-color', 'rgba(0, 0, 0, 0.4)');
             root.style.setProperty('--text-shadow-color', 'rgba(255, 255, 255, 0.5)');
